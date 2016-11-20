@@ -24,7 +24,7 @@
     "ui-router",
     "menus",
     "nav",
-    "navbar",
+    "events",
     "tab",
     "navigation"
   ],

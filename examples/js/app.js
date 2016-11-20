@@ -25,7 +25,7 @@ menuApp.config(function($stateProvider) {
         url: '/navbar',
         templateUrl: 'templates/navbar.html',
         menu: {
-          name: 'Nav Bar',
+          name: 'Events',
           tag: 'sidebar',
           priority: 10
         }
@@ -34,7 +34,7 @@ menuApp.config(function($stateProvider) {
         url: '/tabs',
         templateUrl: 'templates/tabs.html',
         menu: {
-          name: 'Tabs',
+          name: 'Media',
           tag: 'sidebar',
           priority: 5
         }
