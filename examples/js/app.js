@@ -23,7 +23,7 @@ menuApp.config(function($stateProvider) {
       })
       .state('navbar', {
         url: '/navbar',
-        templateUrl: 'templates/navbar.html',
+        templateUrl: 'templates/tabs.html',
         menu: {
           name: 'Events',
           tag: 'sidebar',
@@ -32,7 +32,7 @@ menuApp.config(function($stateProvider) {
       })
       .state('tabs', {
         url: '/tabs',
-        templateUrl: 'templates/tabs.html',
+        templateUrl: 'templates/media.html',
         menu: {
           name: 'Media',
           tag: 'sidebar',
@@ -66,22 +66,35 @@ menuApp.config(function($stateProvider) {
       .state('tabs.1', {
         template: 'test tab 1',
         menu: {
-          name: 'Tab 1',
-          active: true,
-          content: 'test tab 1'
+           name: 'Music for the Soul',
+          content: 'Music for the Soul'
         }
       })
       .state('tabs.2', {
         menu: {
-          name: 'Tab 2',
-          content: 'test tab 2'
+            name: 'Guided Meditation',
+          content: 'Guided Meditation'
         }
       })
       .state('tabs.3', {
         menu: {
-          name: 'Tab 3',
-          disabled: true
+         
+            name: 'Event Photos',
+          active: true,
+          content: 'Event Photos from Daily Practice!'
         }
-      })
+      }
+            
+            )
+  
+  .state('tabs.4', {
+        menu: {
+            name: 'Videos',
+          content: 'Video Archive'
+        
+        }
+      }
+            
+            )
   ;
 });

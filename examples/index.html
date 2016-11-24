@@ -12,7 +12,7 @@
 </head>
 <body ng-app="menuApp">
 
-<header class="navbar navbar-inverse navbar-static-top" role=banner">
+<header class="headercolor" role=banner">
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" ui-sref="home">NGU: Next Generation Unity</a>
@@ -20,7 +20,7 @@
     </div>
 </header>
 
-<div class="container bs-docs-container">
+<div class="container bs-docs-container">                                  
     <div class="row">
         <div class="col-sm-3">
             <div class="bs-docs-sidebar hidden-print hidden-sm hidden-xs">
@@ -29,9 +29,12 @@
                 </ul>
             </div>
         </div>
+        <div class="backgroundcolor">                                                                                                    
         <div class="col-sm-9">
             <div ui-view></div>
+                             </div>
         </div>
+                            
     </div>
 </div>
 
