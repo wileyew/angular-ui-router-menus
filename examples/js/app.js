@@ -21,6 +21,16 @@ menuApp.config(function($stateProvider) {
           priority: 100
         }
       })
+  
+  .state('login', {
+      url: '/login',
+      templateUrl:'templates/login.html',
+      menu: {
+          name: 'Login',
+          priority: 90
+      }
+      
+  })
       .state('navbar', {
         url: '/navbar',
         templateUrl: 'templates/tabs.html',
@@ -53,6 +63,23 @@ menuApp.config(function($stateProvider) {
         }
       })
       .state('navbar.button2', {
+        menu: {
+          name: 'Button 2',
+          tag: 'navbar'
+        }
+      })
+  ;
+});
+
+menuApp.config(function($stateProvider) {
+  $stateProvider
+      .state('login.button1', {
+        menu: {
+          name: 'Button 1',
+          tag: 'login'
+        }
+      })
+      .state('login.button2', {
         menu: {
           name: 'Button 2',
           tag: 'navbar'
